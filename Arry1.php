@@ -409,7 +409,7 @@ echo "</pre>";
 
 
 
-<?php
+<!-- <?php
 
 $fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango'];
 $countries = ['United States', 'Canada', 'United Kingdom', 'Australia', 'Germany'];
@@ -425,5 +425,68 @@ echo $fruits[$newArray];
 echo implode($countries);
 
 
+$newArray2 = array_fill_keys($fruits,"ABDULLAH");
 
+echo "<pre>";
+
+print_r($newArray2);
+
+echo "</pre>";
+
+
+$newArray3 = array_fill(3,4,"Test" );
+
+echo "<pre>";
+
+print_r($newArray3);
+
+echo "</pre>";
+?> -->
+<!-- 
+<?php
+
+$fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango'];
+
+$newArray=array_walk( $fruits,'name');
+
+function name($value,$key)  {
+    echo $key.''.$value.''."<br/>";
+}
+
+
+$newArray = array_walk_recursive($fruits, 'namee');
+
+function namee($value, $key)
+{
+    echo $key . '' . $value . '' . "<br/>";
+}
+?> -->
+
+<?php
+
+// $fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango'];
+
+
+// function functionf($a) 
+//  {
+//     return $a;
+// }
+// // function funcationf($a)
+// // {
+// //     return $a;
+// // }
+// $newarray=array_map("functionf", $fruits);
+
+
+// echo implode($newarray);
+
+
+$fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango'];
+
+function Nameee($a,$b)  {
+    return $a.$b;
+}
+
+$newarray4=array_reduce($fruits,"Nameee");
+echo ($newarray4);
 ?>
