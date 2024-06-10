@@ -26,7 +26,7 @@
 // echo "<br/>";
 ?>
 
-
+<!-- 
 <?php
 
 $A = "Hello world:";
@@ -50,4 +50,54 @@ echo $c;
 echo "<br/>";
 
 echo implode($d);
+?> -->
+<!-- 
+<?php
+
+$A = "Hello world:and Php world";
+
+$a = stripos($A,"and");
+
+echo $a;
+
+
+$b = "Hello world:and Php world";
+
+$c = strripos($b, "PHP");
+
+echo $c;
+?> -->
+
+
+
+<!-- <?php
+
+$A = "Hello world:and Php world";
+
+$a = strstr($A,":");
+
+echo $a;
+
+
+
+
+$b = "Hello world:and Php world";
+
+$c = stristr($b, "PHP");
+
+echo $c;
+
+?> -->
+
+<?php
+
+
+
+
+
+$b = "Hello world:and Php world";
+
+$c = substr($b, 15);
+
+echo $c;
 ?>
