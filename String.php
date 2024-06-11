@@ -34,7 +34,7 @@ $A = "Hello world:";
 $a = strlen($A);
 
 $b = str_word_count($A);
-$c = substr_count($A,"o");
+$c = substr_count($A, "o");
 
 $d = str_word_count($A, 2);
 
@@ -52,11 +52,16 @@ echo "<br/>";
 echo implode($d);
 ?> -->
 <!-- 
+
+
+
+
+
 <?php
 
 $A = "Hello world:and Php world";
 
-$a = stripos($A,"and");
+$a = stripos($A, "and");
 
 echo $a;
 
@@ -72,32 +77,74 @@ echo $c;
 
 <!-- <?php
 
-$A = "Hello world:and Php world";
+        $A = "Hello world:and Php world";
 
-$a = strstr($A,":");
+        $a = strstr($A, ":");
 
-echo $a;
-
-
+        echo $a;
 
 
+
+
+        $b = "Hello world:and Php world";
+
+        $c = stristr($b, "PHP");
+
+        echo $c;
+
+        ?> -->
+
+<!-- <?php
 $b = "Hello world:and Php world";
-
-$c = stristr($b, "PHP");
-
+$c = substr($b, 15);
 echo $c;
-
 ?> -->
+
+
+<!-- 
+
+
+
+
+
 
 <?php
 
+// $b = "Hello world:and Php world";
+
+// $c = str_replace("world", "Abdullah", $b);
+
+// // echo $c;
 
 
 
 
-$b = "Hello world:and Php world";
 
-$c = substr($b, 15);
 
-echo $c;
+
+
+$e = "Hello world:and Php world";
+
+$f = substr_replace($a,"Abdullah",5);
+
+echo $f;
+
+
+$g = "Hello world:and Php world";
+
+$h = strtr($g,"ph","PH");
+
+echo $h;
+?> -->
+
+
+<?PHP
+
+$e = "Hello world:and Php world";
+
+// $f = strrev($e);
+$f = str_shuffle($e);
+
+
+echo $f;
 ?>
