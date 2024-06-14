@@ -64,21 +64,37 @@
         echo $A1;
         ?> -->
 
+<!-- <?php
+
+        // Original data
+        $original_string = "My name is Abdullah";
+
+        // Encode the data
+        $encoded_string = convert_uuencode($original_string);
+
+        // Output the encoded string
+        echo "Encoded: " . $encoded_string . "<br/>";
+
+        // Decode the data
+        $decoded_string = convert_uudecode($encoded_string);
+
+        // Output the decoded string
+        echo "Decoded: " . $decoded_string . "<br/>";
+
+        ?> -->
+
+
 <?php
 
-// Original data
-$original_string = "My name is Abdullah";
 
-// Encode the data
-$encoded_string = convert_uuencode($original_string);
+$str = "my name is abdullah";
 
-// Output the encoded string
-echo "Encoded: " . $encoded_string . "<br/>";
+$convert = bin2hex($str);
 
-// Decode the data
-$decoded_string = convert_uudecode($encoded_string);
+echo $convert."<br/>";
 
-// Output the decoded string
-echo "Decoded: " . $decoded_string . "<br/>";
+$decodeConvert = hex2bin($convert);
+
+echo $decodeConvert."<br/>";
 
 ?>
